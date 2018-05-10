@@ -13,12 +13,18 @@
 """
 
 # Write your function here
+def getSum(piece):
+    if len(piece)==0:
+        return 0
+    else:
+        return piece[0] + getSum(piece[1:]) 
 
 
 
 def main():
     # Test your function here
-    pass
+    print(getSum([1, 3, 4, 2, 5]))
+
 
 if __name__ == "__main__":
     main()
